@@ -47,10 +47,10 @@ public class EmployeeListView extends JFrame {
   }
 
   private void initFrame() {
-    this.setTitle("Employee List View");
     this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-    this.setSize(800, 600);
     this.setLayout(new FlowLayout());
+    this.setTitle("Employee List View");
+    this.setSize(800, 600);
   }
 
   private void addEmployeeList() {
@@ -126,7 +126,7 @@ public class EmployeeListView extends JFrame {
 
       @Override
       public void actionPerformed(ActionEvent e) {
-        System.out.println("Bruh");
+        new AddUserView();
       }
     });
 
