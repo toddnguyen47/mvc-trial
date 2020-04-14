@@ -48,7 +48,7 @@ public class EmployeeListView extends JFrame {
 
   private void initFrame() {
     this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-    this.setLayout(new FlowLayout());
+    this.setLayout(new FlowLayout(FlowLayout.CENTER));
     this.setTitle("Employee List View");
     this.setSize(800, 600);
   }
@@ -60,7 +60,7 @@ public class EmployeeListView extends JFrame {
     this.addPageStartPanel();
     this.addPageEndPanel();
 
-    this.add(panelMain_);
+    this.add(panelMain_, BorderLayout.CENTER);
   }
 
   private void addPageStartPanel() {
